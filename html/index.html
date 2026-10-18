@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Inventory System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="inventory-container">
+        <div class="player-inventory">
+            <h2>المخزون</h2>
+            <div class="inventory-grid" id="player-inventory-grid"></div>
+            <div class="player-info">
+                <div class="info-item">
+                    <span>الوزن:</span>
+                    <span id="player-weight">0/0</span>
+                </div>
+                <div class="info-item">
+                    <span>النقود:</span>
+                    <span id="player-cash">0</span>
+                </div>
+                <div class="info-item">
+                    <span>الصحة:</span>
+                    <span id="player-health">100</span>
+                </div>
+                <div class="info-item">
+                    <span>الدروع:</span>
+                    <span id="player-armor">0</span>
+                </div>
+                <div class="info-item">
+                    <span>الجوع:</span>
+                    <span id="player-hunger">100</span>
+                </div>
+                <div class="info-item">
+                    <span>العطش:</span>
+                    <span id="player-thirst">100</span>
+                </div>
+            </div>
+            <div class="hotbar" id="hotbar"></div>
+        </div>
+        <div class="action-buttons">
+            <button id="use-button">استخدام</button>
+            <button id="give-button">إعطاء</button>
+            <button id="combine-button">دمج</button>
+            <button id="throw-button">رمي</button>
+            <button id="settings-button">الإعدادات</button>
+        </div>
+        <div class="ground-inventory">
+            <h2>الأرض</h2>
+            <div class="inventory-grid" id="ground-inventory-grid"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
